@@ -1,0 +1,8 @@
+.header {
+    background: url(../img/header-background.png) 0 0 / contain no-repeat;
+   height: 9030px;
+}
+.header__content{
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+      }
