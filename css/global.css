@@ -76,3 +76,11 @@ ul li {
   justify-content: center;
   text-align: center;
 }
+.text-not-visible {
+  display: none;
+}
+@media (min-width: 800px) {
+  .text-not-visible {
+    display:block;
+  }
+}
