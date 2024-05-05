@@ -54,6 +54,7 @@ a:visited {
 }
 a:hover {
   text-decoration: none;
+  color: var(--menu-button-color);
 }
 ul{
   margin: 0px;
@@ -61,4 +62,17 @@ ul{
 }
 ul li {
   list-style: none;
+}
+.button {
+  display: block;
+  background-color: var(--button-background-color);
+  border-radius: 35px;
+  width: 236px;
+  height: 60px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
