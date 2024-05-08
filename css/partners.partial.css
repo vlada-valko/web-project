@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 100px;
 }
 .partners h2 {
     margin-bottom: 10px;
