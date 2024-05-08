@@ -2,65 +2,126 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 80px;
 }
+
 @media (min-width: 800px) {
   .subscribe {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
+
 .subscribe__img {
   max-width: 100%;
+  height: auto;
   order: 2;
+  margin: 40px 0px;
 }
+
 @media (min-width: 800px) {
   .subscribe__img {
     order: 1;
-    width: 100%;
-   max-width: 677px;
-   height: auto;
+    object-fit: cover;
+    height: auto;
     grid-row: span 2;
+    padding: 0px 50px 0px 0px;
   }
 }
+
 .subscribe__text {
   order: 1;
 }
+
 @media (min-width: 800px) {
   .subscribe__text {
     order: 2;
-    max-width: 100%;
+    max-width: 70%;
   }
 }
+
 .subscribe__form {
   order: 3;
 }
-@media (min-width: 800px) {
-  .subscribe__form {
-    order: 3;
-  }
-}
-form {
+
+.subscribe form {
   display: flex;
   flex-direction: column;
   align-self: center;
 }
+
 @media (min-width: 800px) {
-  form {
-    display: flex;
+  .subscribe form {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 }
-input {
-  background: var(--input-background);
-  border-radius: 39px;
-  padding: 19px 0px 19px 39px;
-  width: 273px;
-  height: 54px;
+@media (min-width: 800px) {
+  .subscribe__text p,
+  .subscribe__form p,
+  .subscribe__form h2 {
+    text-align: left !important;
+  }
+}
+.subscribe__text__title,
+.subscribe__form h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+.subscribe__text__discribe-mobile,
+.subscribe__text__discribe-laptop {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 55px;
+  text-align: center;
 }
 
-input::placeholder {
+.subscribe__text__mobile {
+  font-size: 28px;
+  line-height: 40px;
+  text-align: center;
+  color: var(--text-color);
+}
+
+@media (min-width: 800px) {
+  .subscribe__text__discribe-laptop {
+    display: block;
+  }
+  .subscribe__text__discribe-mobile,
+  .subscribe__text__mobile {
+    display: none;
+  }
+}
+
+.form__input {
+  background: var(--input-background);
+  border-radius: 39px;
+  width: 100%;
+  height: 54px;
+  border: none;
+  margin: 12px 0px;
+  padding: 19px 0px 19px 35px;
+}
+
+.form__input::placeholder {
   color: var(--title-color);
   opacity: 1;
+}
+
+.form__submit {
+  color: var(--menu-button-color);
+  background-color: var(--button-background-color);
+  font-size: 20px;
+  line-height: 20px;
+  width: 100%;
+  border: none;
+}
+
+.subscribe p,
+.subscribe h2,
+.form__input {
+  margin-bottom: 15px;
 }
