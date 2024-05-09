@@ -19,11 +19,12 @@ body.menu-visible{
   overflow: hidden;
 }
 .wrapper {
-    padding: 0px 20px;
+    padding: 0px 50px;
 }
 @media (min-width: 800px) {
   .wrapper {
     max-width: 1200px;
+    width: 80%;
     margin: auto;
     padding: 0px 20px;
   }

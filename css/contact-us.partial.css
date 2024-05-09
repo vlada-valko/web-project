@@ -1,6 +1,7 @@
 .contact-us {
     margin-bottom: 100px;
     text-align: center;
+    text-wrap: wrap;
 }
 .contact-us__line {
     display: flex;
@@ -71,8 +72,11 @@ min-height: 193px;
 .contact-address {
     display: flex;
     flex-direction: column;
-max-width: 50%;
-margin: auto;
+}
+@media(min-width: 800px) {
+    .contact-address{
+   max-width: 50% ; margin: auto;
+}
 }
 .contact-address address{
     display: flex;

@@ -13,5 +13,15 @@ btn.addEventListener('click', () => {
     headerContent.classList.toggle('menu-visible');
 });
 
-const menuHight = menuList.offsetHeight;
-document.documentElement.style.setProperty('--menu-height', menuHight + 'px');
+function setMenuHeight() {
+    if (window.innerWidth < 800) {
+        const menuHeight = menuList.offsetHeight;
+        document.documentElement.style.setProperty('--menu-height', menuHeight + 'px');
+    }
+}
+
+setMenuHeight();
+
+window.addEventListener('resize', setMenuHeight);
+
+
