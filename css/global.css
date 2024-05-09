@@ -85,6 +85,6 @@ ul li {
 }
 @media (min-width: 800px) {
   .text-not-visible {
-    display:block;
+    display:inline;
   }
 }
