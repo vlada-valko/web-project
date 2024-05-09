@@ -1,0 +1,110 @@
+.pricing {
+  margin-bottom: 100px;
+  text-align: center;
+  background: var(--title-color);
+  padding: 50px 0px;
+}
+.pricing h2,
+.pricing__text {
+  color: var(--menu-button-color);
+}
+.pricing__text {
+  max-width: 530px;
+  margin: auto;
+}
+.pricing .text-not-visible {
+  display: none;
+}
+@media (min-width: 900px) {
+  .pricing .text-not-visible {
+    display: inline;
+  }
+}
+.pricind__offers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px auto 50px;
+  max-width: 1105px;
+}
+@media (min-width: 900px) {
+  .pricind__offers {
+    height: 650px;
+  }
+}
+.pricing__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 100%;
+  max-width: 255px;
+  padding: 40px;
+  background-color: var(--menu-button-color);
+  margin: 20px 0px;
+  border-radius: 10px;
+}
+@media (min-width: 900px) {
+  .pricing__item {
+    margin: 0px 20px;
+  }
+  .pricing__item:nth-child(2) {
+    height: 90%;
+  }
+  .pricing__item:nth-child(1),
+  .pricing__item:nth-child(3) {
+    height: 80%;
+  }
+}
+@media (min-width: 900px) {
+  .pricind__offers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.pricing__item:nth-child(2) {
+  background: var(--button-background-color);
+  color: var(--menu-button-color);
+}
+.pricing__item:nth-child(2) .button {
+  background: var(--menu-button-color);
+  color: var(--title-color);
+}
+.pricing__item__title {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.pricing__item p {
+  font-size: 16px;
+}
+.pricing__item__price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 153px;
+  text-align: left;
+}
+.pricing__item__price p:nth-child(1) {
+  font-weight: 700;
+  font-size: 74px;
+  padding: 0px 10px;
+}
+.pricing__item__price span {
+  font-weight: 700;
+  font-size: 20px;
+}
+.pricing__item__price p:nth-child(2) {
+  font-size: 16px;
+}
+.pricing__item li{
+  margin: 10px auto;
+}
+.pricing__item .button {
+    min-height: 56px;
+    margin-bottom: 30px;
+}

@@ -26,7 +26,7 @@
   
   @media (min-width: 800px) {
     .features__video-screen {
-      order: 3; /* Залишено без змін */
+      order: 3; 
       background: url(../img/video-screen-laptop.png) 0 0 / contain no-repeat;
       width: 700px;
       height: 558px;
@@ -36,7 +36,6 @@
   
   @media (min-width: 1000px) {
     .features__video-screen {
-      /* Залишено без змін */
       background: url(../img/video-screen-laptop.png) 0 0 / contain no-repeat;
       width: 950px;
       height: 658px;
